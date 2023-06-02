@@ -1,0 +1,33 @@
+@use '@utilities/variables' as var;
+@use '@utilities/mixins' as mixin;
+
+
+.navbar {
+    background-color: white;
+    width: 100%;
+    height: 110px;
+    position: relative; 
+    & nav {
+        @include mixin.Center;
+        @include mixin.Row(space-between);
+        max-width: var.$wide;
+        width: 100%;
+        color: var.$tertiary;
+    } 
+}
+
+.navigation {
+    background-color: var.$primary;
+    height: 70px;
+    position: relative; 
+    & nav {
+        @include mixin.Center;
+        @include mixin.Row(space-between);
+        max-width: var.$normal;
+        width: 100%;
+        color: var.$secondary;
+        & a:hover {
+            color: var.$quaternary;
+        }
+    }
+}
