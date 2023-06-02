@@ -1,0 +1,17 @@
+@use '@utilities/variables' as var;
+@use '@utilities/mixins' as mixin;
+
+.phone, .email {
+    color: var.$tertiary;
+    padding: 10px 0;
+    @include mixin.Row(left);
+    column-gap: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    & svg {
+        height: 30px;
+    }
+    & path {
+        fill: var.$tertiary;
+    }
+}

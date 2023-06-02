@@ -21,6 +21,8 @@
     ],
     "paths": {
       "@components/*": ["./src/templates/components/*"], 
+      "@sections/*": ["./src/templates/sections/*"], 
+      "@snippets/*": ["./src/templates/globalSnippet/*"], 
       "@styles/*": ["./src/styles/*"],
       "@utilities/*": ["./src/styles/utilities/*"]
     }
