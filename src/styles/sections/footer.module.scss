@@ -24,8 +24,9 @@
     &Right {
         @include mixin.Col(left);
         row-gap: 10px; 
-        & p {
-            color: white;
+        & p { 
+            width: 270px;
+            color: white; 
         }
     }
 }

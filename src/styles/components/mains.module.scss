@@ -1,0 +1,72 @@
+@use '@utilities/variables' as var;
+@use '@utilities/mixins' as mixin;
+@use '@utilities/breakpoints' as bp;
+
+.Main {
+    &Articles {
+        color: var.$primary;
+        & h2 {
+            margin: 0;
+        }
+        & h4 { 
+            margin-bottom: 40px;
+        } 
+        & p, & b {
+            margin: 10px 0;
+            font-size: larger; 
+            line-height: 1.5;
+        }
+        & h6 {
+            margin: 20px 0;
+            text-align: center;
+            font-size: 25px;
+        }
+        & a { 
+            @include mixin.Button(var.$secondary, white);
+        }
+    }
+    &Heading {
+        width: 100%;
+        margin: 40px 0;
+        text-align: center; 
+        color: var.$primary;
+    }
+    &Listings {
+        @include mixin.Row(space-between);
+        flex-wrap: wrap;
+        row-gap: 70px;
+        & > div:last-child {
+            @include bp.breakpoint(var.$normalwide) {
+                display: none;   
+            }
+        } 
+    } 
+}
+
+.Card {
+    width: var.$cardwidth;
+    &Contents{
+        text-align: center;
+        width: 100%; 
+        padding: 15px;
+        & p {
+            height: 80px;
+            max-width: 240px;
+            margin: auto;
+            padding: 10px 0;
+        }
+        & h5 {
+            color: var.$tertiary;
+        }
+    }
+    &Action {
+        width: 100%; 
+        max-width: 240px;
+        margin: auto;
+        padding: 15px 0;
+        @include mixin.Row(space-between);
+        & > a {
+            @include mixin.Button(var.$tertiary, white)
+        }
+    }
+}

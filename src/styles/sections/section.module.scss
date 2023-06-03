@@ -1,0 +1,15 @@
+@use '@utilities/variables' as var;
+@use '@utilities/mixins' as mixin;
+
+.Section {
+    @include mixin.Container(var.$normalwide, var.$deep); 
+}
+
+.About {
+    @extend .Section;
+    @include mixin.Row;
+    & > div {
+        width: 100%;
+    }
+} 
+

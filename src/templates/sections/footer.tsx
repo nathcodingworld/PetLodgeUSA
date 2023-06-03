@@ -8,7 +8,8 @@ const links = [
     { title: "Who are We", href: "/about" },
     { title: "Them vs US", href: "/themvsus" }
 ]
-export default function Footer() {
+export default function Footer() { 
+
     return (
     <footer className={style.Footer}>
         <div>

@@ -5,9 +5,9 @@ export default function Navigation() {
     return (
     <div className={style.navigation}> 
         <nav>
-            <Link href='#' >Home</Link>
-            <Link href='#' >Who We Are</Link>
-            <Link href='#' >What We Do</Link>
+            <Link href='/' >Home</Link>
+            <Link href='/about' >Who We Are</Link>
+            <Link href='/service' >What We Do</Link>
             <Link href='#' >Them vs US</Link>
             <Link href='#' >Testimonials</Link>
             <Link href='#' >FAQ</Link>

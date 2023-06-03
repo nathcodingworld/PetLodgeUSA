@@ -1,7 +1,7 @@
 @use '@utilities/variables' as var;
 @use '@utilities/mixins' as mixin;
 
-.phone, .email {
+.phone, .email, .address {
     color: var.$tertiary;
     padding: 10px 0;
     @include mixin.Row(left);

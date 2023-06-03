@@ -20,8 +20,25 @@
     transform: translate(-50%, -50%);
 }
  
-@mixin Container($w) {
+@mixin Container($w, $h: 0) {
     max-width: $w;
     width: 100%;
-    margin: auto;
+    padding: 0 20px;
+    margin: $h auto ;
+}
+
+@mixin Button($bg, $color: white, $type: 'filled' ) {
+    color: $color; 
+    width: max-content;
+    border-radius: 4px;
+    padding: 8px 16px; 
+    display: block;
+    margin: 10px 0;
+    @if($type == 'filled') {
+        border: none; 
+        background-color: $bg;
+    } @else {
+        background-color: none;
+        border: 1px solid $bg;
+    }
 }
