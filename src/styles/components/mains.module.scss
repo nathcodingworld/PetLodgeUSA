@@ -35,7 +35,7 @@
         @include mixin.Row(space-between);
         flex-wrap: wrap;
         row-gap: 70px;
-        & > div:last-child {
+        &Hide {
             @include bp.breakpoint(var.$normalwide) {
                 display: none;   
             }
@@ -67,6 +67,23 @@
         @include mixin.Row(space-between);
         & > a {
             @include mixin.Button(var.$tertiary, white)
+        }
+    }
+    &FullBody {
+        border-radius: 20px;
+        overflow: hidden;
+        position: relative;
+        & p {
+            @include mixin.Col;
+            height: 79px;
+            width: 100%;
+            background-color: var.$primary;
+            position: absolute;
+            bottom: 0;
+            color: white;
+            font-size: 30px; 
+            letter-spacing: 5px;
+            font-weight: 600;
         }
     }
 }

@@ -11,7 +11,7 @@ export default function MainListing({children, w}: articleType) {
     return (
         <div className={style.MainListings}>
             {children}
-            {w && <div style={{width: w}}></div>}
+            {w && <div className={style.MainListingsHide}  style={{width: w}}></div>}
         </div>
     )
 }
