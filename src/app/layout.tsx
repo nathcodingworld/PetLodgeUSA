@@ -13,7 +13,7 @@ export const metadata = {
   openGraph: {
     title: 'Pet Lodge USA of Boardman',
     description: 'Stay safe and be well! Kim, Scott, and all of us at Pet Lodge USA of Boardman.',
-    image: '/icontrans.png',
+    images: '/icontrans.png',
     type: 'website'
   },
 }
